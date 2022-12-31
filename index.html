@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="$1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Colleges by Countries</title>
+        <link rel="stylesheet" href="./dist/css/jsvectormap.css" />
+        <link rel="stylesheet" href="./bootstrap-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" content="Daniel Gajardo">
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand h1">Colleges by Countries</span>
+            <a data-toggle="modal" data-target="#exampleModal" class="navbar-brand align-self-left">About</a> </nav>
+        <main class="p-4">
+            <div id="map" class="shadow m-3 align-self-center col-sm-11 col-md-7"></div>
+            <div id="colContainer" class="d-flex col-md-10 align-self-center mt-5 justify-content-between flex-wrap">
+            </div> 
+
+            <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">About</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <p>This is a project that consume an API of universities (<a href="http://universities.hipolabs.com/">Hipolabs</a>) with help of the Map (<a href="https://github.com/themustafaomar/jsvectormap">JsVectorMap</a>)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+
+        <script src="./dist/js/jsvectormap.min.js"></script>
+        <script src="./dist/maps/world.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+        <script src="./bootstrap-dist/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
